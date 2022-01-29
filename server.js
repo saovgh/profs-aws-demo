@@ -15,8 +15,8 @@ client.query(`
 `)
   .then(()=> {
       return Promise.all([
-          client.query('insert into users(name) values($1)', ['moe']),
-          client.query('insert into users(name) values($1)', ['lucy'])
+          client.query('insert into users(name) values($1)', ['Arepa']),
+          client.query('insert into users(name) values($1)', ['con queso amarillo'])
       ]);
   })
   .then(()=> {
